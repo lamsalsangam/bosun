@@ -1,0 +1,5 @@
+# Shell scripts must stay LF or they break when run from a Windows clone (WSL/Git Bash)
+*.sh text eol=lf
+
+# Everything else: normalize in repo, native line endings on checkout
+* text=auto
