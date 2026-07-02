@@ -23,8 +23,15 @@ no web UI, no dependencies, works offline.
 
 All commands are Windows-first. Destructive ones support `-WhatIf`/`-Confirm`
 and detect missing admin rights instead of crashing. Per-command details in
-[`docs/`](docs/). Linux/macOS equivalents live in [`bash/`](bash/) —
-currently `bosun-health-report.sh`.
+[`docs/`](docs/).
+
+Linux/macOS equivalents live in [`bash/`](bash/):
+
+| Script | Equivalent of |
+| --- | --- |
+| `bosun-health-report.sh` | `Get-BosunHealthReport` |
+| `bosun-software-inventory.sh` | `Get-BosunSoftwareInventory` (dpkg/rpm/pacman/apk/brew) |
+| `bosun-dns-flush.sh` | `Clear-BosunDns` (systemd-resolved/macOS/BIND/nscd) |
 
 ## Install
 
