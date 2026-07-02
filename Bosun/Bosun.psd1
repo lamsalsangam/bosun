@@ -11,6 +11,7 @@
     # and makes the public surface obvious.
     FunctionsToExport = @(
         'Get-BosunHealthReport'
+        'Reset-BosunPrintSpooler'
     )
     CmdletsToExport   = @()
     VariablesToExport = @()
