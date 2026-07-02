@@ -12,6 +12,7 @@
     FunctionsToExport = @(
         'Clear-BosunDns'
         'Get-BosunHealthReport'
+        'Get-BosunSoftwareInventory'
         'Reset-BosunNetwork'
         'Reset-BosunPrintSpooler'
     )
