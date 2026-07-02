@@ -10,7 +10,9 @@
     # Explicit export list (updated as commands land) - keeps discovery fast
     # and makes the public surface obvious.
     FunctionsToExport = @(
+        'Clear-BosunDns'
         'Get-BosunHealthReport'
+        'Reset-BosunNetwork'
         'Reset-BosunPrintSpooler'
     )
     CmdletsToExport   = @()
