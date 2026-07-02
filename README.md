@@ -7,7 +7,10 @@ reports, fixes for the classic ticket generators, and provisioning helpers.
 Every command is something a support tech would actually run on a ticket —
 no web UI, no dependencies, works offline.
 
-<!-- TODO: terminal GIF of Get-BosunHealthReport -AsText -->
+![Get-BosunHealthReport -AsText — one-click system triage](docs/img/health-report.svg)
+
+*Sample output (demo data) — a low-disk flag, a pending reboot, and a spooler
+failure caught in one command.*
 
 ## Commands
 

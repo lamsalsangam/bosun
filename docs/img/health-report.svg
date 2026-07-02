@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="852" viewBox="0 0 760 852" font-family="Consolas, 'Cascadia Mono', Menlo, monospace" font-size="13">
+  <!-- Terminal window -->
+  <rect x="0" y="0" width="760" height="852" rx="10" fill="#0c0c14"/>
+  <rect x="0" y="0" width="760" height="34" rx="10" fill="#1a1a26"/>
+  <rect x="0" y="24" width="760" height="10" fill="#1a1a26"/>
+  <circle cx="22" cy="17" r="6" fill="#ff5f57"/>
+  <circle cx="42" cy="17" r="6" fill="#febc2e"/>
+  <circle cx="62" cy="17" r="6" fill="#28c840"/>
+  <text x="380" y="21" fill="#8a8a99" text-anchor="middle" font-size="12">PowerShell — Bosun</text>
+
+  <!-- Prompt -->
+  <text x="24" y="62" fill="#4ec9b0">PS C:\&gt; <tspan fill="#dcdcaa">Get-BosunHealthReport</tspan><tspan fill="#c8c8d4"> -AsText</tspan></text>
+
+  <!-- Report body -->
+  <g fill="#c8c8d4" xml:space="preserve">
+    <text x="24" y="94">======================================================================</text>
+    <text x="24" y="114" fill="#ffffff" font-weight="bold">SYSTEM HEALTH REPORT - DECK5-PC01</text>
+    <text x="24" y="134">Generated: 07/02/2026 09:15:32  (elevated: False)</text>
+    <text x="24" y="154">======================================================================</text>
+
+    <text x="24" y="188" fill="#4ec9b0" font-weight="bold">OPERATING SYSTEM</text>
+    <text x="24" y="208">  Microsoft Windows 11 Pro (build 26100)</text>
+    <text x="24" y="228">  Last boot: 06/30/2026 07:48:11   Uptime: 2d 1h 27m</text>
+
+    <text x="24" y="262" fill="#4ec9b0" font-weight="bold">HARDWARE</text>
+    <text x="24" y="282">  Dell Inc. OptiPlex 7010, 8 logical processors</text>
+
+    <text x="24" y="316" fill="#4ec9b0" font-weight="bold">MEMORY</text>
+    <text x="24" y="336">  15.8 GB total, 6.2 GB free (61% used)</text>
+
+    <text x="24" y="370" fill="#4ec9b0" font-weight="bold">DISKS</text>
+    <text x="24" y="390">  C: [Windows]        237.5 GB total     18.9 GB free (8% free)<tspan fill="#f48771" font-weight="bold">  &lt;&lt; LOW SPACE</tspan></text>
+    <text x="24" y="410">  D: [Data]           465.8 GB total    301.4 GB free (65% free)</text>
+
+    <text x="24" y="444" fill="#4ec9b0" font-weight="bold">TOP PROCESSES (by memory)</text>
+    <text x="24" y="464">  chrome                       PID 4212       1,102 MB</text>
+    <text x="24" y="484">  Teams                        PID 8844         624 MB</text>
+    <text x="24" y="504">  OUTLOOK                      PID 7120         418 MB</text>
+    <text x="24" y="524">  explorer                     PID 3376         285 MB</text>
+    <text x="24" y="544">  svchost                      PID 1288         190 MB</text>
+
+    <text x="24" y="578" fill="#4ec9b0" font-weight="bold">PENDING REBOOT</text>
+    <text x="24" y="598"><tspan fill="#febc2e">  YES - Windows Update reboot required</tspan></text>
+
+    <text x="24" y="632" fill="#4ec9b0" font-weight="bold">RECENT ERRORS (System + Application, last 24h)</text>
+    <text x="24" y="652">  2026-07-02 08:52  System       Service Control Manager/7000</text>
+    <text x="24" y="672" fill="#f48771">      The Print Spooler service failed to start due to the following error:</text>
+    <text x="24" y="692">  2026-07-01 17:03  Application  Application Error/1000</text>
+    <text x="24" y="712" fill="#f48771">      Faulting application name: POSTERM.exe, version: 2.4.1.0</text>
+
+    <text x="24" y="746" fill="#4ec9b0" font-weight="bold">NOTES</text>
+    <text x="24" y="766">  - Session is not elevated; all standard checks still ran (none require</text>
+    <text x="24" y="786">    admin rights).</text>
+
+    <text x="24" y="820">======================================================================</text>
+  </g>
+</svg>
