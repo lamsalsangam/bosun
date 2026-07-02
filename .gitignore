@@ -1,0 +1,15 @@
+# OS noise
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Editor
+.vscode/
+*.code-workspace
+
+# Test/coverage output
+testResults.xml
+coverage.xml
+
+# Local agent context (contains personal info / portfolio notes)
+CLAUDE.md
