@@ -11,13 +11,20 @@ no web UI, no dependencies, works offline.
 
 ## Commands
 
-| Command | What it does | Platform |
+| Command | What it fixes | Example |
 | --- | --- | --- |
-| `Get-BosunHealthReport` | One-click system triage: OS/uptime, disks, memory, top processes, pending reboot, recent error events. Object output, or `-AsText` for pasting into a ticket. | Windows |
+| `Get-BosunHealthReport` | "My computer is slow/broken" — one-click triage: OS/uptime, disks, memory, top processes, pending reboot, recent errors | `Get-BosunHealthReport -AsText` |
+| `Reset-BosunPrintSpooler` | Stuck print queue — stop spooler, clear jobs, restart, verify | `Reset-BosunPrintSpooler -WhatIf` |
+| `Clear-BosunDns` | "This website won't load" — flush the DNS cache, report entries cleared | `Clear-BosunDns` |
+| `Reset-BosunNetwork` | "No internet" — DNS flush + DHCP renew (+ optional adapter restart) with before/after IP report | `Reset-BosunNetwork -AdapterName 'Wi-Fi'` |
+| `Get-BosunSoftwareInventory` | "What's installed, what version?" — registry-based (no MSI self-repair), CSV export for asset tracking | `Get-BosunSoftwareInventory -Path inv.csv` |
+| `New-BosunUser` | Onboarding — create local account, set groups, require password change at first logon | `New-BosunUser jdoe -Password $pw -RequirePasswordChange` |
+| `Disable-BosunUser` | Offboarding — disable (not delete) and stamp the reason into the description | `Disable-BosunUser jdoe -Reason 'left - #4302'` |
 
-More on the way: print-spooler reset, DNS/network reset, software inventory,
-user onboarding/offboarding. Linux/macOS equivalents live in [`bash/`](bash/)
-where they make sense.
+All commands are Windows-first. Destructive ones support `-WhatIf`/`-Confirm`
+and detect missing admin rights instead of crashing. Per-command details in
+[`docs/`](docs/). Linux/macOS equivalents live in [`bash/`](bash/) —
+currently `bosun-health-report.sh`.
 
 ## Install
 
