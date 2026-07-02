@@ -11,8 +11,10 @@
     # and makes the public surface obvious.
     FunctionsToExport = @(
         'Clear-BosunDns'
+        'Disable-BosunUser'
         'Get-BosunHealthReport'
         'Get-BosunSoftwareInventory'
+        'New-BosunUser'
         'Reset-BosunNetwork'
         'Reset-BosunPrintSpooler'
     )
